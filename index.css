@@ -125,6 +125,18 @@ p.aboutme {
     box-shadow: 2px 2px 3px #CC13F2;
 } */
 
+.flexContainer {
+    display: flex; 
+    width: 33%
+}
+
+
+
+
+
+
+
+
 button {
     display: inline-block;
     color: black;
