@@ -1,0 +1,141 @@
+body{
+background-color: #F6DCF5;
+margin-left: 80px;
+margin-right: 80px;
+font-family: 'Quicksand', sans-serif;
+font-size: large
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header {
+    display: flex;
+    justify-content: flex-start;
+
+}
+.logo{
+    width: 80px;
+    margin-right: 20px;
+}
+.first {
+    margin-right: 10px;
+}
+.name{
+    border: 5px solid black
+}
+.navigation{
+    width: 450px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    border: 2px solid #CC13F2;
+    border-radius: 25px;
+}
+p.aboutme {
+    height: 200px;
+}
+.sierra {
+    padding: 10px;
+    margin: left;
+    width: 350px;
+    border-radius: 25px;
+}
+.intro{
+    display: flex;
+    /* border: 2px solid white; */
+    justify-content: space-evenly;
+}
+/* .hr .h2 {
+    border: 0;
+    width: 25%;
+    color: #FF079C;
+    background-color: #FF079C;
+    height: 3px;
+} */
+.CS {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "WWCard WWDes"
+    "DOLDes DOLCard"
+    "ABRCard ABRDes";
+}
+.WWCard {
+    grid-area: WWCard;
+    display: grid;
+    border: 3px solid #FF079C;
+    border-radius: 25px;
+    box-shadow: 6px 6px 5px #CC13F2;
+    padding: 100px;
+    height: 150px;
+    width: 200px;
+    justify-content: left;
+    text-align: center;
+}
+.WWDes {
+    grid-area: WWDes;
+    padding: 150px 0;
+}
+.DOLDes {
+    grid-area: DOLDes;
+    padding: 150px 0;
+}
+.DOLCard {
+    grid-area: DOLCard;
+    display: grid;
+    
+    border: 3px solid #FF079C;
+    border-radius: 25px;
+    box-shadow: 6px 6px 5px #CC13F2;
+    padding: 100px;
+    height: 150px;
+    width: 200px;
+    text-align: center;
+    
+}
+
+.ABRCard {
+    grid-area: ABRCard;
+    display: grid;
+    border: 3px solid #FF079C;
+    border-radius: 25px;
+    box-shadow: 6px 6px 5px #CC13F2;
+    padding: 100px;
+    height: 150px;
+    width: 200px;
+    justify-content: left;
+    text-align: center;
+}
+
+.ABRDes {
+    grid-area: ABRDes;
+    padding: 150px 0;
+}
+/* .footer .button {
+    color: white;
+    border: 2px solid #CC13F2;
+    border-radius: 12px;
+    box-shadow: 2px 2px 3px #CC13F2;
+} */
+
+button {
+    display: inline-block;
+    color: black;
+    background-color: white;
+    border: 3px solid #FF079C;
+    border-radius: 20px;
+    height: 40px; 
+    margin: 10px;
+    padding: 10px;  
+}
+.button {
+    display: flex;
+    justify-content: space-evenly;
+}
