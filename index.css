@@ -51,6 +51,10 @@ p.aboutme {
     /* border: 2px solid white; */
     justify-content: space-evenly;
 }
+
+.imgbutton {
+    text-align: center;
+}
 /* .hr .h2 {
     border: 0;
     width: 25%;
@@ -90,7 +94,7 @@ p.aboutme {
 .DOLCard {
     grid-area: DOLCard;
     display: grid;
-    
+    float: right;
     border: 3px solid #FF079C;
     border-radius: 25px;
     box-shadow: 6px 6px 5px #CC13F2;
@@ -125,19 +129,17 @@ p.aboutme {
     box-shadow: 2px 2px 3px #CC13F2;
 } */
 
-.flexContainer {
-    display: flex; 
-    width: 33%;
-    flex-direction: column;
+.mySkills hr {
+    border: 3px solid #FF079C;
     
 }
 
-
-
-
-
-
-
+.flexContainer {
+    display: flex; 
+    width: 33%;
+    flex-direction: row;
+    outline: 1px solid red;
+}
 
 button {
     display: inline-block;
