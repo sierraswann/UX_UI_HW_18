@@ -94,7 +94,7 @@ p.aboutme {
 .DOLCard {
     grid-area: DOLCard;
     display: grid;
-    float: right;
+    justify-self: right;
     border: 3px solid #FF079C;
     border-radius: 25px;
     box-shadow: 6px 6px 5px #CC13F2;
@@ -136,37 +136,33 @@ p.aboutme {
 .mySkills .flexContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
-    "UserResearch UserInterfaceDesign WebDevelopment"
     "UserResearch UserInterfaceDesign WebDevelopment";
-    justify-content: space-around;
+    justify-content: center;
+    margin: 0 auto;
     text-align: center;
 
-}
-
-.flexContainer {
-    display: flex; 
-    width: 33%;
-    flex-direction: row;
 }
 
 .userResearch {
     border: 3px solid #CC13F2;
     text-align: left;
+    padding: 2em;
 }
 
 .userinterfaceDesign {
     border: 3px solid #CC13F2;
     text-align: left;
+    padding: 2em;
 }
 
 .webDevelopment {
     border: 3px solid #CC13F2;
     text-align: left;
+    padding: 2em;
 }
    
-
 button {
     display: inline-block;
     color: black;
