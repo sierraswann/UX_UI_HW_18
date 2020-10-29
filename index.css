@@ -55,13 +55,13 @@ p.aboutme {
 .imgbutton {
     text-align: center;
 }
-/* .hr .h2 {
+/* hr {
     border: 0;
     width: 25%;
     color: #FF079C;
-    background-color: #FF079C;
-    height: 3px;
-} */
+    background-color: #FF079C; */
+  
+/* } */
 .CS {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -130,16 +130,42 @@ p.aboutme {
 } */
 
 .mySkills hr {
-    border: 3px solid #FF079C;
-    
+    border: 3px solid #FF079C; 
+}
+
+.mySkills .flexContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "UserResearch UserInterfaceDesign WebDevelopment"
+    "UserResearch UserInterfaceDesign WebDevelopment";
+    justify-content: space-around;
+    text-align: center;
+
 }
 
 .flexContainer {
     display: flex; 
     width: 33%;
     flex-direction: row;
-    outline: 1px solid red;
 }
+
+.userResearch {
+    border: 3px solid #CC13F2;
+    text-align: left;
+}
+
+.userinterfaceDesign {
+    border: 3px solid #CC13F2;
+    text-align: left;
+}
+
+.webDevelopment {
+    border: 3px solid #CC13F2;
+    text-align: left;
+}
+   
 
 button {
     display: inline-block;
@@ -154,4 +180,25 @@ button {
 .button {
     display: flex;
     justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 600) {
+p.aboutme {
+    display: column;
+     width: 100%;
+     grid-template-columns: 1fr;
+     grid-template-rows: 300px;
+     grid-template-areas: 
+    "aboutme";
+}
+.flexContainer {
+     display: column;
+     width: 100%;
+     grid-template-columns: 1fr;
+     grid-template-rows: 300px 300px 300px;
+     grid-template-areas: 
+    "WWCard WWDes"
+    "DOLCard DOLDes"
+    "ABRCard ABRDes";
+     }
 }
