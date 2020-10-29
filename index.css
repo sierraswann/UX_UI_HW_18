@@ -127,7 +127,9 @@ p.aboutme {
 
 .flexContainer {
     display: flex; 
-    width: 33%
+    width: 33%;
+    flex-direction: column;
+    
 }
 
 
